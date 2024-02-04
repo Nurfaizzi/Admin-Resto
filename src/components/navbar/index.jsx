@@ -42,7 +42,6 @@ localStorage.removeItem("role")
 
       </div>
       <div className='flex gap-8'>
-        <h1 className='text-sm font-semibold leading-4'>Kasir</h1>
         <Link to={'/profiel'}>
         <h1 className='text-sm font-semibold leading-4'>Profile</h1>
         </Link>
