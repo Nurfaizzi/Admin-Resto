@@ -1,0 +1,71 @@
+td{
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+
+}
+
+th {
+    background-color: #e5e7eb;
+    padding-left: 20px;
+    width: 0%;
+    border-color: #f7f7f7;
+    border-style: solid; 
+    height: 67px;
+}
+
+.p-datatable-table {
+    border-spacing: 0px;
+    width: 98%;
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+    border-width: 20px;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: normal;
+    background: var(--surface-ground);
+    color: var(--text-color);
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.card {
+    background: var(--surface-card);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.p-dropdown{
+    display: flex;
+    padding-top: 12px;
+
+}
+
+
+.p-dropdown-trigger{
+    display: flex;
+    margin-top: -12px;
+}
+
+.p-tag-value{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+
+.p-dialog {
+    display: flex;
+    flex-direction: column;
+    pointer-events: auto;
+    max-height: 0%;
+    transform: scale(1);
+    position: relative;
+}
