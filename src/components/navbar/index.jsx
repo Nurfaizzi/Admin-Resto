@@ -25,7 +25,7 @@ let navigate = useNavigate()
   }, [showDropDown]);
 
 const handleLogOut = () => {
-  navigate('/login')
+  navigate('/')
 localStorage.removeItem("accessToken")
 localStorage.removeItem("role")
 }

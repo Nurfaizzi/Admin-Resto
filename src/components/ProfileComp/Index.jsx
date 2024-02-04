@@ -55,8 +55,8 @@ const ProfComp = () => {
         </p>
         <div className="grid gap-8 pl-8  m-auto p-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 border-blue-500  ">
         {menu.map((obj, key) => (
-          <div>
-            <div class="max-w-sm bg-white border border-gray-200 rounded-2xl shadow dark:bg-gray-800 dark:border-gray-700">
+          <div key={key}>
+            <div className="max-w-sm bg-white border border-gray-200 rounded-2xl shadow dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
                 <img
                   className="object-fill  h-48 w-96 " 
@@ -64,13 +64,13 @@ const ProfComp = () => {
                   alt=""
                 />
               </a>
-              <div class="p-5">
+              <div className="p-5">
                 <a href="#">
-                  <h5 class="m-auto text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  <h5 className="m-auto text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                     {obj.name}
                   </h5>
                 </a>
-                <p class="m-auto text-center mb-3 font-normal text-gray-700 dark:text-gray-400">
+                <p classNames="m-auto text-center mb-3 font-normal text-gray-700 dark:text-gray-400">
                 Food is any substance consumed by an organism for nutritional support.        
                 </p>
               </div>
@@ -129,13 +129,13 @@ const ProfComp = () => {
         <div className="flex-column">
           <h1 className="flex text-center justify-center m-auto font-bold">Follow Us</h1>
         <div className="flex items-center justify-center pt-2">
-        <i class="fa-brands fa-facebook"></i>
+        <i className="fa-brands fa-facebook"></i>
         </div>
        <div  className="flex items-center justify-center pt-2">
-       <i class="fa-brands fa-twitter"></i>
+       <i className="fa-brands fa-twitter"></i>
        </div>
       <div  className="flex items-center justify-center pt-2">
-      <i class="fa-brands fa-instagram"></i>
+      <i className="fa-brands fa-instagram"></i>
       </div>
  
         </div>

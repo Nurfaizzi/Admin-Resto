@@ -1,16 +1,15 @@
-import React from 'react'
-import DashboardComp from '../../components/dashboardcomp'
-import Navbar from '../../components/navbar'
-import Table from '../../components/Table'
+import React from "react";
+import DashboardComp from "../../components/dashboardcomp";
+import Navbar from "../../components/navbar";
+import Table from "../../components/Table";
 
 const Dashboard = () => {
   return (
     <div>
-        <Navbar />
-    <DashboardComp />
-    {/* <Table /> */}
+      <Navbar />
+      <DashboardComp />
     </div>
-  )
-}
+  );
+};
 
-export default Dashboard
+export default Dashboard;

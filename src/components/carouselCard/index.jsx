@@ -66,7 +66,7 @@ export default class Responsive extends Component {
         title:
           "A customer is a person or business that buys goods or services from another business. Customers are crucial because they generate revenue. Without them, businesses would go out of business.",
         name: "gunawan",
-        icon: <i class="fa-solid fa-star"></i>,
+        icon: <i className="fa-solid fa-star"></i>,
       },
       {
         id: 2,
@@ -74,7 +74,7 @@ export default class Responsive extends Component {
         title:
           "A customer is a person or business that buys goods or services from another business. Customers are crucial because they generate revenue. Without them, businesses would go out of business.",
         name: "Paijem",
-        icon: <i class="fa-solid fa-star"></i>,
+        icon: <i className="fa-solid fa-star"></i>,
       },
       {
         id: 3,
@@ -82,7 +82,7 @@ export default class Responsive extends Component {
         title:
           "A customer is a person or business that buys goods or services from another business. Customers are crucial because they generate revenue. Without them, businesses would go out of business.",
         name: "Suloyo",
-        icon: <i class="fa-solid fa-star"></i>,
+        icon: <i className="fa-solid fa-star"></i>,
       },
     ];
 
@@ -91,28 +91,28 @@ export default class Responsive extends Component {
         <Slider {...settings}>
           {dataCarousel.map((data, key) => (
             <div className="wrap-slider pt-10 flex pl-4 " key={key}>
-              <div class=" max-w-sm border bg-white border-gray-200 rounded-xl shadow dark:bg-gray-800 dark:border-gray-700">
+              <div className=" max-w-sm border bg-white border-gray-200 rounded-xl shadow dark:bg-gray-800 dark:border-gray-700">
                 <img
                   className="rounded-full w-56 h-56 p-10 flex justify-center m-auto"
                   src={data.image}
                   alt=""
                 />
-                <h5 class="m-auto text-center mb-2 text-xs font-bold tracking-tight text-gray-900 dark:text-white ">
+                <h5 className="m-auto text-center mb-2 text-xs font-bold tracking-tight text-gray-900 dark:text-white ">
                   {data.name}
                 </h5>
-                <h5 class="m-auto flex justify-center gap-3 text-center mb-2 text-xs font-bold tracking-tight text-gray-900 dark:text-white ">
+                <h5 className="m-auto flex justify-center gap-3 text-center mb-2 text-xs font-bold tracking-tight text-gray-900 dark:text-white ">
                   {data.icon}
                   {data.icon}
                   {data.icon}
                   {data.icon}
                   {data.icon}
                 </h5>
-                <div class="p-5">
-                  <h5 class="m-auto text-center mb-2 text-xs  tracking-tight text-gray-900 dark:text-white">
+                <div className="p-5">
+                  <h5 className="m-auto text-center mb-2 text-xs  tracking-tight text-gray-900 dark:text-white">
                     {data.title}
                   </h5>
                 </div>
-                <div class=""></div>
+                <div className=""></div>
               </div>
             </div>
           ))}

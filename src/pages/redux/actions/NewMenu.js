@@ -1,5 +1,5 @@
 import { TYPES } from "../Types";
-import * as requestAPI from '../../helpers/api'
+import * as requestAPI from "../../helpers/api";
 
 export const newMenu = (form, config, navigate) => async (dispatch) => {
   try {
@@ -21,7 +21,6 @@ export const newMenu = (form, config, navigate) => async (dispatch) => {
         title: "Oops...",
         text: "Name,ID,Description,Type,ImageUrl And Price Not Be Empety!",
       });
-
     }
     const token = localStorage.getItem("accessToken");
     form.price = Number(form.price);
@@ -45,14 +44,12 @@ export const newMenu = (form, config, navigate) => async (dispatch) => {
         isCreate: true,
       },
     });
-    
+
     setTimeout(() => {
       navigate("/menu");
     }, 2000);
     setLoading(true);
   } catch (err) {
     console.log(err);
-
-    // setLoading(false)
   }
 };
