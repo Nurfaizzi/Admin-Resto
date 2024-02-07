@@ -3,9 +3,9 @@ import Protected from "./Routes/Protected";
 import Dashboard from "./pages/Dashboard";
 import Profile from "./pages/Profile";
 import DetailMenu from "./pages/detailMenus";
-import { EditMenu } from "./pages/helpers/api";
 import Login from "./pages/login";
 import Menu from "./pages/menu";
+import EditMenus from "./pages/menuEdit";
 import NewDataMenu from "./pages/newMenus";
 
 export const routes = [
@@ -23,7 +23,7 @@ export const routes = [
   },
   {
     path: "/editmenu/:id",
-    element:<Protected><EditMenu /></Protected>,
+    element:<Protected><EditMenus /></Protected>,
   },
   {
     path: "/detailmenu/:id",

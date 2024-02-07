@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect, useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { handleGetAllMenu } from "../../pages/redux/actions/MenuAction";
@@ -11,7 +11,7 @@ const CompMenu = () => {
   const [filterName, setFilterName] = useState("");
   const dispatch = useDispatch();
   const { list_menu } = useSelector((state) => state.Menu);
-
+  const {id} = useParams
   const [deleteSucces, SetDeleteSucces] = useState(false);
   const navigate = useNavigate();
   const [showModal, setShowModal] = useState(false);

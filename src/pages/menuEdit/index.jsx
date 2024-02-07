@@ -1,7 +1,7 @@
 import React from 'react'
 import EditComp from '../../components/editmenu'
 
-const EditMenu = () => {
+const EditMenus = () => {
   return (
     <div>
         <EditComp />
@@ -9,4 +9,4 @@ const EditMenu = () => {
   )
 }
 
-export default EditMenu
+export default EditMenus
